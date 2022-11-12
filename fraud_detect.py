@@ -47,7 +47,7 @@ def main():
     #     st.subheader("Random Forest Classifier")
     st.image('image_1.gif')
 
-    if st.checkbox("Single Forecast with Random Forest"):
+    if st.checkbox("Single Forecast"):
         filename = 'random_pickle_model'
         model = pickle.load(open(filename, 'rb'))
         # scaled_random= pickle.load(open("random_pipeline","rb"))
@@ -87,7 +87,7 @@ def main():
             if predictions:
                 st.image('iamge_2.gif')
 
-    if st.checkbox("Multiple Forecast with Random Forest"):
+    if st.checkbox("Multiple Forecast"):
         filename = 'random_pickle_model'
         model = pickle.load(open(filename, 'rb'))
         # buffer = 
